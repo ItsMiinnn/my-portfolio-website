@@ -1,25 +1,26 @@
 import React from 'react'
 import { Link } from 'react-scroll'
+import Logo from '../assets/footerlogo.png'
 
 function Footer() {
   return (
     <footer className='p-4 bg-[#0c9869] md:px-6 md:py-8'>
       <div class='sm:flex sm:items-center sm:justify-between'>
-        <a href='https://flowbite.com/' class='flex items-center mb-4 sm:mb-0'>
-          <span className='text-white font-[Consolas] text-2xl tracking-[.25em]'>Sangmin Kim</span>
+        <a href='https://flowbite.com/' class='flex items-center mb-4 sm:mb-0 justify-center'>
+          <img src={Logo} alt="Logo image" className='w-[200px] px-[5px]' />
         </a>
-        <ul class='flex flex-wrap items-center mb-6 text-sm text-white sm:mb-0 dark:text-gray-400'>
+        <ul class='flex flex-wrap items-center mb-6 text-sm text-white sm:mb-0 dark:text-gray-400 justify-between'>
           <li>
-              <Link to='about' class='mr-4 hover:underline md:mr-6' smooth={true} duration={500}>About</Link>
+              <Link to='about' class='hover:underline' smooth={true} duration={500}>About</Link>
           </li>
           <li>
-            <Link to='#' class='mr-4 hover:underline md:mr-6' smooth={true} duration={500}>Privacy Policy</Link>
+            <Link to='#' class=' hover:underline' smooth={true} duration={500}>Privacy Policy</Link>
           </li>
           <li>
-            <Link to='#' class='mr-4 hover:underline md:mr-6' smooth={true} duration={500}>Licensing</Link>
+            <Link to='#' class='hover:underline' smooth={true} duration={500}>Licensing</Link>
           </li>
           <li>
-            <Link to='contact' className='mr-4 hover:underline md:mr-6' smooth={true} duration={500}>Contact</Link>
+            <Link to='contact' className='hover:underline' smooth={true} duration={500}>Contact</Link>
           </li>
         </ul>
       </div>
