@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-white text-gray-800'>
       <div>
-        <img src={Logo} alt="Logo image" className='w-[130px] md:w-[200px] pt-[20px] sm:pt-[40px] pb-[20px] pl-[20px]'/>
+        <Link to='home' smooth={true} duration={500}><img src={Logo} alt="Logo image" className='w-[130px] md:w-[200px] pt-[20px] sm:pt-[40px] pb-[20px] pl-[20px]'/></Link>
         {/* style={{width: '200px', padding: '60px 0 20px 20px'} */}
       </div>
 
